@@ -2,9 +2,41 @@
     display:flex;
     flex-direction:row;
     flex-wrap:wrap;
+    justify-content:space-evenly;
+    list-style:none;
 }
 
 #carpic{
-    height:
-    width:
+    height:92px;
+    width:200px;
+}
+
+#name{
+    font-size:22px;
+    text-align:center;
+    font-weight:bold;
+}
+
+#info{
+    font-size:18px;
+    text-align:center;
+    margin-top:-16px;
+    
+}
+
+#info:hover{
+    font-weight:bold;
+    margin-top:-12px;
+}
+
+#carp{
+    font-size:26px;
+    margin-left:15%;
+    margin-top:50px;
+}
+
+#carc{
+    font-size:22px;
+    margin-left:18%;
+    width:1000px;
 }
