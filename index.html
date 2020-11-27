@@ -12,6 +12,27 @@
 
 <body>
   <main id="app">
+    <header>
+      <img id="toplogo" src="images/minilogo.svg" alt="Mini cooper Logo">
+
+      <nav class="main-nav">
+
+        <ul>
+        <li class="nav-item"><a href="#"><span class="selected">Models</span></a></li>
+        <li class="nav-item"><a href="#"><span class="selected">Tools</span></a></li>
+        <li class="nav-item"><a href="#"><span class="selected">Discover</span></a></li>
+        <li class="nav-item"><a href="#"><span class="selected">Owners</span></a></li>
+        <li class="nav-item"><a href="#"><span class="selected">Pre Owned</span></a></li>
+        
+        </ul>
+    </nav>
+
+    </header>
+
+    <img id="hero" src="images/HeroMini.jpg" alt="Mini cooper hero image">
+    <hr id="divider">
+
+    <h2 id="bigtext">ELECTRIFY YOUR DRIVE</h2>
 
     <ul id="carlist">
       <li v-for="mini, index in minis" class="remove-mini" @click.prevent="showMiniData(mini)" v-bind:css="{'mini-button-modifier' : removeAformat}">

@@ -9,12 +9,14 @@
 #carpic{
     height:92px;
     width:200px;
+    margin-top:40px;
 }
 
 #name{
-    font-size:22px;
+    font-size:24px;
     text-align:center;
     font-weight:bold;
+    font-family: Cambria, Arial, sans-serif;
 }
 
 #info{
@@ -27,16 +29,39 @@
 #info:hover{
     font-weight:bold;
     margin-top:-12px;
+    transition:0.5s;
 }
 
 #carp{
-    font-size:26px;
+    font-size:28px;
     margin-left:15%;
-    margin-top:50px;
+    margin-top:30px;
+    font-family: Cambria, Arial, sans-serif;
 }
 
 #carc{
     font-size:22px;
     margin-left:18%;
     width:1000px;
+}
+
+#divider{
+    background: darkolivegreen;
+    height:10px;
+    margin-top:-9px;
+    width:99.9%;
+}
+
+#bigtext{
+    margin-top:-10px;
+    font-size:80px;
+    font-family: Cambria, Arial, sans-serif;
+}
+
+#toplogo{
+    margin-left:-70px;
+    margin-right:120px;
+}
+
+#hero{
 }
