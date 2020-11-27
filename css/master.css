@@ -92,13 +92,14 @@ header {
 #carp {
   font-size: 28px;
   margin-left: 15%;
-  margin-top: 30px;
+  margin-top: 50px;
   font-family: Cambria, Arial, sans-serif; }
 
 #carc {
   font-size: 22px;
   margin-left: 18%;
-  width: 1000px; }
+  width: 1000px;
+  margin-bottom: 150px; }
 
 #divider {
   background: darkolivegreen;
@@ -114,5 +115,32 @@ header {
 #toplogo {
   margin-left: -70px;
   margin-right: 120px; }
+
+footer {
+  color: white;
+  background: darkolivegreen;
+  display: flex; }
+
+#botlogo {
+  width: 400px; }
+
+#foottext {
+  display: flex;
+  flex-direction: column; }
+
+#footbig {
+  font-size: 40px;
+  font-family: Cambria, Arial, sans-serif;
+  margin-top: 100px;
+  text-align: right;
+  margin-left: 380px; }
+
+#footsmol {
+  font-size: 15px;
+  margin-top: -20px;
+  width: 430px;
+  margin-left: 500px;
+  text-align: right;
+  line-height: 25px; }
 
 /*# sourceMappingURL=master.css.map */

@@ -1,32 +1,31 @@
 footer{
-    color:#5A5A5A;
+    color:white;
+    background:darkolivegreen;
+    display:flex;
+}
+
+#botlogo{
+    width:400px;
+}
+
+#foottext{
+    display:flex;
+    flex-direction: column;
+}
+
+#footbig{
+    font-size:40px;
+    font-family: Cambria, Arial, sans-serif;
+    margin-top:100px;
+    text-align:right;
+    margin-left:380px;
+}
+
+#footsmol{
     font-size:15px;
-    text-align:center;
-    margin-top:50px;
-}
-
-#botline{
-    margin-top:60px;
-    margin-bottom:-10px;
-}
-
-@media screen and (min-width: 1000px){
-    footer{
-        font-size:20px;
-        text-align:unset;
-        margin-top:200px;
-        display:flex;
-        text-decoration: none;
-    }
-        #footbuttons{
-                display:unset;
-            }
-        #copyR{
-            margin-top: 120px;
-            margin-left: 681px;
-        }
-        #botline{
-            margin-top:60px;
-            margin-bottom:-10px;
-        }
+    margin-top:-20px;
+    width:430px;
+    margin-left:500px;
+    text-align:right;
+    line-height:25px;
 }
