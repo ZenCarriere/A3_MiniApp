@@ -1,12 +1,24 @@
+import { fetchData } from "./components/DataMiner.js";
+
+
 const myVM =(() => {
+
     let vue_vm = new Vue({
-        el: "#app",
         data:{
+            removeAformat: true,
+            showCarData: false,
+            minis: [],
+            currentCarData: {}
         },
 
-        //this is the mounted lifecycle hook, vue is done creating itself and has attached to the app div
         mounted: function(){
-            console.log("Vue is down to clown BABY");
+            console.log("Vue is ready to go");
+
+            fetchData("./includes/index.php")
+            .then(data => {
+                data.forEach(mini => this.minis.push(mini));
+                })
+            .catch(err => console.log(err));
         },
 
         updated: function(){
@@ -14,6 +26,14 @@ const myVM =(() => {
         },
 
         methods: {
+
+            showMiniData(target){
+                console.log('clicked to see data from', target, target.model);
+
+                this.showCarData = this.showCarData ? false:true;
+
+                this.currentCarData = target;
+            }
         }
 
     }).$mount("#app");

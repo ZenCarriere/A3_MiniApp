@@ -4,15 +4,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Vue intro</title>
+  <title>Mini Cooper totally real site</title>
 
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/master.css">
   <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 </head>
 
 <body>
   <main id="app">
-    
+
+    <ul id="carlist">
+      <li id="carpic" v-for="mini, index in minis" class="remove-mini" @click.prevent="showMiniData(mini)" v-bind:css="{'mini-button-modifier' : removeAformat}">
+        <img :src="'images/' + mini.image" :alt='mini.model + "image" '>
+        <p id="name">{{ mini.model }}</p>
+        <p id="info">More info</p>
+      </li> 
+    </ul>
+
+    <section class="car-data" :class="{'show-car' : showCarData}">
+      <h1 class="carprice">{{ currentCarData.price }}</h1>
+      <p class="cardesc">{{ currentCarData.description }}</p>
+    </section>
+
   </main>
 </body>
 <script src="js/main.js" type="module"></script>

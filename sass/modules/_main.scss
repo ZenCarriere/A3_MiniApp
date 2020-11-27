@@ -1,0 +1,17 @@
+body { 
+    font-family: $main-font-family; 
+    font-size: $main-font-size; 
+    position:relative;
+    padding:0;
+}
+
+.hidden 
+	{
+		display: none;
+    }
+    
+#app
+{
+	width:1400px;
+	margin:0 auto;
+}
