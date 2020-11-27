@@ -14,16 +14,16 @@
   <main id="app">
 
     <ul id="carlist">
-      <li id="carpic" v-for="mini, index in minis" class="remove-mini" @click.prevent="showMiniData(mini)" v-bind:css="{'mini-button-modifier' : removeAformat}">
-        <img :src="'images/' + mini.image" :alt='mini.model + "image" '>
+      <li v-for="mini, index in minis" class="remove-mini" @click.prevent="showMiniData(mini)" v-bind:css="{'mini-button-modifier' : removeAformat}">
+        <img id="carpic" :src="'images/' + mini.image" :alt='mini.model + "image" '>
         <p id="name">{{ mini.model }}</p>
         <p id="info">More info</p>
       </li> 
     </ul>
 
     <section class="car-data" :class="{'show-car' : showCarData}">
-      <h1 class="carprice">{{ currentCarData.price }}</h1>
-      <p class="cardesc">{{ currentCarData.description }}</p>
+      <h1 id="carp" class="carprice">{{ currentCarData.price }}</h1>
+      <p id="carc" class="cardesc">{{ currentCarData.description }}</p>
     </section>
 
   </main>
